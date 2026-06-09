@@ -282,20 +282,7 @@ input:focus,select:focus,textarea:focus{
 
 <!-- ═══ HEADER ═══ -->
 <header>
-  <svg height="46" viewBox="0 0 380 110" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="182" cy="16" r="6" fill="#0a0a0a"></circle>
-    <circle cx="162" cy="34" r="6" fill="#0a0a0a"></circle>
-    <circle cx="162" cy="34" r="6" fill="#999" clip-path="url(#c1)"></circle>
-    <clipPath id="c1"><rect x="162" y="28" width="6" height="12"></rect></clipPath>
-    <circle cx="202" cy="34" r="6" fill="#0a0a0a"></circle>
-    <circle cx="202" cy="34" r="6" fill="#999" clip-path="url(#c2)"></circle>
-    <clipPath id="c2"><rect x="202" y="28" width="6" height="12"></rect></clipPath>
-    <circle cx="182" cy="52" r="6" fill="#0a0a0a"></circle>
-    <circle cx="182" cy="52" r="6" fill="#999" clip-path="url(#c3)"></circle>
-    <clipPath id="c3"><rect x="182" y="46" width="6" height="12"></rect></clipPath>
-    <text x="20" y="92" font-family="Montserrat,sans-serif" font-weight="800" font-size="40" fill="#0a0a0a" letter-spacing="5">LUMINA ATELIER</text>
-    <text x="128" y="108" font-family="Montserrat,sans-serif" font-weight="300" font-size="13" fill="#0a0a0a" letter-spacing="9">MILANO</text>
-  </svg>
+  <div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:800;font-size:20px;letter-spacing:.22em;color:#0a0a0a;white-space:nowrap">LUMINA ATELIER</div>
   <div style="display:flex;align-items:center;gap:12px">
     <span class="htitle">Preventivi</span>
     <span id="save-dot" class="sdot saving"></span>
@@ -2629,7 +2616,6 @@ function _renderLuminaAtelierPDF(opts){
     +'<table width="100%" style="margin-bottom:20px"><tr>'
     +'<td width="60%">'
     +'<div style="font-family:\'Montserrat\',Helvetica,sans-serif;font-weight:800;font-size:22pt;letter-spacing:3px">LUMINA ATELIER</div>'
-    +'<div style="font-family:\'Montserrat\',Helvetica,sans-serif;font-weight:300;font-size:8pt;letter-spacing:8px;margin-top:3px">MILANO</div>'
     +'</td>'
     +'<td width="40%" style="text-align:right;vertical-align:top">'
     +'<div style="font-weight:700;font-size:14pt;letter-spacing:2px">'+docTitle+'</div>'
@@ -3075,7 +3061,7 @@ function _impParseLuminaAtelierPDF(text){
   text.split('\n').forEach(function(L){
     L=L.trim();
     if(!L) return;
-    if(/^(LUMINA ATELIER|MILANO|N[°.]|DESCRIZIONE|DESCRIPTION|CLIENTE|CLIENT|Totale|Total|Subtotale|Subtotal|Sconto|Discount|IVA|VAT|NOTE|NOTES|Lumina Atelier|Banca|Prezzi)/i.test(L)) return;
+    if(/^(LUMINA ATELIER|N[°.]|DESCRIZIONE|DESCRIPTION|CLIENTE|CLIENT|Totale|Total|Subtotale|Subtotal|Sconto|Discount|IVA|VAT|NOTE|NOTES|Lumina Atelier|Banca|Prezzi)/i.test(L)) return;
     var lm=L.match(lineRe);
     if(lm){
       var desc=lm[1].trim();
