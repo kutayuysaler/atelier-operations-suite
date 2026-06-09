@@ -32,7 +32,7 @@ The CRM in particular is, on purpose, not a marketing-automation platform. There
 
 ## 1. CRM (`crm.html`)
 
-![CRM dashboard](screenshots/crm.png)
+![CRM dashboard](crm.png)
 
 A contact manager for architects, retailers, hospitality buyers, yacht designers, press, and private clients.
 
@@ -45,7 +45,7 @@ A contact manager for architects, retailers, hospitality buyers, yacht designers
 
 ## 2. Warehouse & Inventory (`magazzino.html`)
 
-![Inventory dashboard](screenshots/magazzino.png)
+![Inventory dashboard](magazzino.png)
 
 Stock and production management for a made-to-order workshop.
 
@@ -58,7 +58,7 @@ Stock and production management for a made-to-order workshop.
 
 ## 3. Quotations (`preventivi.html`)
 
-![Quotes archive](screenshots/preventivi.png)
+![Quotes archive](preventivi.png)
 
 A tool that turns a structured price list into clean, print-ready quotes.
 
